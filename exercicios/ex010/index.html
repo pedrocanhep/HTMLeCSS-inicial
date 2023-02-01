@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserindo vídeos</title>
+</head>
+<body>
+    <h1>Hospedando vídeos localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <!-- existem duas formas de inserir os vídeos: -->
+    <video src="midia/video01.mp4" width="560px"  controls poster="../ex003/jogadores- santos-full.jpg"></video> <!-- desta forma, só poderá ser inserido um formato de vídeo-->
+    <video poster="../ex003/jogadores-santos.jpg" width="560px" controls>
+        <source src="midia/video01.mp4" type="video/mp4">
+        <source src="ogv" type="video/ogv">
+        <source src="m4v" type="video/m4v">
+        <source src="webm" type="video/webm">
+        <!-- desta forma, poderá ser inserido todos os formatos de vídeo (recomendado) -->
+        <!-- lembrando que a ordem dos formatos importa para que o navegador saiba a ordem que deve tentar a compatibilidade-->
+    </video>
+    <h1>Hospedando vídeos externos</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- a vantagem de usar o link do Youtube é que não exige dados, então fica gratúito para a hospedagem do site -->
+    <!-- as melhores plataformas para usar a hospedagem externa são o Youtube e o Vimeo -->
+</body>
+</html>

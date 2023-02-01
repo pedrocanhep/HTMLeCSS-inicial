@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes com o Dafont</title>
+    <style>
+        @font-face {
+            font-family: 'Love';
+            src: url(love\ larry\ ttf.ttf) format(truetype); /* o "format" é utilizado geralmente para quando tem mais de 1 opção de formato (ttf ou otf) */
+        /* 
+            Tipos de format()
+            - opentype (otf)
+            -truetype (ttf)
+            - embedded-opentype
+            -truetype-aat (Apple Advanced Typography)
+            - svg
+        */
+            font-weight: normal;
+            font-style: normal;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+        body {
+            background-color: #2e2e2e;
+            color: #ffffff;
+            font-family: 'Roboto Mono', sans-serif;
+        }
+
+        h1 {
+            font-family: 'Love', sans-serif;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Título
+    </h1>
+    <h2>
+        Subtítulo
+    </h2>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque tenetur aspernatur deleniti quasi? Eveniet veniam fuga dolor ipsa dolores dignissimos cum commodi sunt repellat asperiores, quos totam numquam? Aliquid, necessitatibus.
+    </p>
+</body>
+</html>

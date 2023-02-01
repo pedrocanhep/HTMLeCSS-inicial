@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores em CSS</title>
+    <style>
+        /* O "*" significa que é uma configuração global na CSS */
+        * { 
+            background-color: #000000;        
+        }
+
+        body {
+        /* Para criar um efeito de cor gradiente, basta usar o código = background-image: linear-gradient(*direção*, *1ª cor*, *2ª cor, quantas cores quiser) */
+            background-image: linear-gradient(0deg, #000000, #ffff00 30%);
+            background-attachment: fixed; /* esta tag serve para dizer que o background ocupará o espaço completo fixo da tela mesmo que role ou mesmo que o conteúdo não ocupa todo o espaço da tela */
+        }
+
+        h1 {
+            padding: 10px;
+            margin: -10px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: justify;
+            text-indent: 40pt;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 1px rgb(150, 150, 150);
+            color: #ffffff;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="background-color: black; color: yellow;">Representação por nomes</h1>
+    <!-- Esta representação é limitada às cores que possuem um nome -->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam cum earum, saepe nesciunt officia, ad ducimus aliquid natus repudiandae sequi error amet, sunt quas nam dolor? Nulla magnam quisquam vero?</p>
+
+    <h1 style="background-color: #000000; color: #ffff00;">Representação por códigos Hexadecimais</h1>
+    <!-- 
+        Para relembrar:
+        Decimais = 1 2 3 4 5 6 7 8 9 0;
+        Hexadecimais(hexa: 6 letras + decimais: os 10 números) = 1 2 3 4 5 6 7 8 9 0 A B C D E F
+     -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod explicabo qui quasi minus repellendus voluptates, repudiandae ipsam maiores harum perferendis doloribus necessitatibus asperiores veniam inventore amet unde. Culpa, expedita sint.</p>
+
+    <h1 style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 0);">Representação por código RGB</h1>
+     <!-- RGB = Red, Green, Blue (você dimensiona o tanto que quer de cada uma dessas cores) -->
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis repellat architecto perferendis minus voluptatem delectus ab perspiciatis quos laboriosam. Pariatur doloremque accusamus libero suscipit rem expedita exercitationem sapiente beatae neque?</p>
+
+    <h1 style="background-color: rgba(0, 0, 0, 1); color: rgba(255, 255, 0, 1);">Representação por código RGBA</h1>
+    <!-- RGBA = Ref, Green, Blue, Alpha (utiliza do mesmo conceito do RGB, porém com a adição do Alpha, que dimensiona a "transparência" ou "opacidade" da cor) -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita autem sit temporibus? Sunt dolorem ut debitis tempore asperiores dolores voluptate reprehenderit, vitae voluptatem dignissimos eum iusto fugit impedit voluptas illo?</p>
+
+    <h1 style="background-color: hsl(0, 0%, 0%); color: hsl(60, 100%, 50%);">Representação por código HSL</h1>
+    <!-- HSL = hue(matiz), saturation(saturação), lightness(luminosidade) -->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum nobis rem, consectetur aut asperiores, porro ratione corporis tempore iste dolores unde tenetur similique optio provident ut vel ex ullam inventore.</p>
+
+</body>
+</html>

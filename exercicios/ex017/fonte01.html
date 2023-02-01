@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+            background-color: #2e2e2e;
+            color: #ffffff;
+        }
+        /* Estilo das fontes */
+        h1 {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 600;
+            font-size: 3em;
+            font-style: italic;
+            /* 
+Tem como usar essas 4 formatações em 1 só código, isso se chama shorthand (mãozinha mesmo), a shorthand deste caso é a tag "font", dentro dela, a ordem dos estilos é a seguinte:
+font-style -> font-weight -> font-size -> font-family 
+; */
+            font: italic 600 3em 'Courier New', Courier, monospace; /* esta linha se equivale à aquelas 4 lá de cima */
+        }
+        h2 {
+            font: 700 2em Arial;
+        }
+/* 
+Medidas absolutas: 
+cm (centímetro), mm (milímetro), in (polegadas), px (pixels), pt (pontos), pc (paica)
+
+Medidas relativas:
+em (medida relativa ao tamanho atual da fonte), ex (relativo à altura X da fonte), rem (relativo ao tamanho atual da fonte do BODY), vw (relativa à largura da viewport), vh (relativa à altura da viewport), % (porcentagem)
+
+Medidas recomendadas para uso:
+em e px
+        */
+        h3#cm {
+            font-size: 1cm;
+        }
+        h3#mm {
+            font-size: 1mm;
+        }
+        h3#in {
+            font-size: 1in;
+        }
+        h3#px {
+            font-size: 1px;
+        }
+        h3#pt {
+            font-size: 1pt;
+        }
+        h3#pc {
+            font-size: 1pc;
+        }
+        h3#em {
+            font-size: 1em;
+        }
+        h3#ex {
+            font-size: 1em;
+        }
+        h3#rem {
+            font-size: 1rem;
+        }
+        h3#vw {
+            font-size: 1vw;
+        }
+        h3#vh {
+            font-size: 1vh;
+        }
+        h3#porcentagem {
+            font-size: 1%;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Trabalhando com fontes
+    </h1>
+    <h2>
+        Subtítulo das fontes
+    </h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti blanditiis facilis fuga quibusdam tempore, necessitatibus praesentium consequuntur nobis dolore? Vero dignissimos placeat dolorum voluptates amet odio consequatur unde vitae natus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, illo hic! Cupiditate iste qui eveniet ducimus magnam doloribus possimus, quasi asperiores nobis omnis quae, facilis repellat veniam earum. Numquam, quam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea sapiente molestias porro quaerat optio nam necessitatibus ratione totam placeat labore aperiam praesentium inventore eligendi fuga dolorem, sit voluptatibus, culpa ut?
+    </p>
+    <h3 id="cm">testando cm</h3>
+    <h3 id="mm">testando mm</h3>
+    <h3 id="in">testando in</h3>
+    <h3 id="px">testando px</h3>
+    <h3 id="pt">testando pt</h3>
+    <h3 id="pc">testando pc</h3>
+    <h3 id="em">testando em</h3>
+    <h3 id="ex">testando ex</h3>
+    <h3 id="rem">testando rem</h3>
+    <h3 id="vw">testando vw</h3>
+    <h3 id="vh">testando vh</h3>
+    <h3 id="porcentagem">testando %</h3>
+</html>

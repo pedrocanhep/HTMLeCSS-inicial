@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id, Class e Pseudo-class</title>
+    <style>
+        /* 
+            Id (#)              = Identificador;
+            Classs (.)          = Classe;
+            Pseudo-Class (:)    = Estado do elemento;
+            Pseudo-Element (::) = Conteúdo do elemento;
+            Children (>)        = "Filho" do elemento;
+        */
+        body {
+            background-color: #0f0f0f;
+            color: #ffffff;
+        }
+
+        h1 {
+            color: aqua;
+        }
+
+        #principal {
+            background-color: #1f1f1f;
+            padding: 10px;
+            color: #ffff00;
+            margin: -10px;
+        }
+
+        h2 {
+            color: #00ff00;
+        }
+
+        .pequeno {
+            color: #ff0000;
+        }
+
+        div {
+            display: inline-block;
+            background-color: #888888;
+            border: 1px solid #ffffff;
+            text-align: center;
+            height: 125px;
+            width: 125px;
+        }
+        div:hover { /* Isto é uma pseudo-class */
+            background-color: #248269;
+        }
+
+        div > p {
+            display: none;
+        }
+        div:hover > p {
+            display: block;
+        }
+        #diferentona:hover {
+            height: 100%;
+        }
+        #diferentona a {
+            color: white;
+            text-decoration: none;
+        }
+        #diferentona a:hover::after {
+            content: ' tem ideia do quanto você ';        
+        }
+
+        div:hover::after {
+            content: 'Lindeza';
+        }
+    </style>
+</head>
+<body>
+    <h1 id="principal">Título Principal</h1>
+    <h1>Título</h1>
+    <h2 class="pequeno">Pequeno</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos nobis quo sint nisi delectus at enim nihil aut quae quasi error voluptates, consectetur voluptatem doloribus ipsam necessitatibus. Nulla, quibusdam voluptatum.</p>
+    <h1>Título</h1>
+    <h2>Médio</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga molestias nesciunt, eum culpa sapiente iure incidunt odio corrupti nulla dolores sequi voluptas. Aspernatur asperiores corrupti quam tenetur. Quisquam, distinctio aperiam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim illum nostrum, eos adipisci, voluptates sequi, laudantium hic odio dolores rem officiis iste ullam reiciendis saepe totam maxime fugiat itaque eligendi.</p>
+    <h1>Título</h1>
+    <h2 class="pequeno">Pequeno</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis soluta nemo nisi necessitatibus qui fuga facilis eum, hic, sint dolores, eligendi aut laudantium quod veniam nobis provident molestias quas dolore?</p>
+    <div>nhe <br></div>
+    <div id="diferentona">
+        nhe <br>
+        <p>Você <p><a href="https://www.google.com/search?q=mentira&client=opera&hs=m0T&sxsrf=AJOqlzX14CymoW-OL_C340SZBHLL2apjwg:1673718217317&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiLh7Cezsf8AhVcGbkGHWTND4kQ_AUoAXoECAEQAw&biw=458&bih=950&dpr=1#imgrc=47MyagL0UxiBNM">não</a></p></p><p>é uma</p>
+    </div>
+    <div>
+        nhe <br>
+        <p>
+            co nheco
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+    <style>
+        h2 {
+            font-size: 14pt;
+            color: rgba(0,0,0,0.8);
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Usando links externos:
+    </h1>
+    <h2>
+        Serve para fazer ligação com conteúdos externos à sua página.
+    </h2>
+    <p>
+        Você pode acessar a página oficial do Santos clicando aqui: <a href="https://www.santosfc.com.br" target="_blank" rel="external">acessar página oficial SFC</a> 
+        <!-- a tag <a> é a tag ÂNCORA, e o parâmetro 'href' significa "hipertext reference" que é a referência hipertexto -->
+        <!-- o parâmetro 'target' é o trageto que o link tomará, neste caso ele irá para uma página nova em branco, por isso o "_blank". Já o parâmetro 'rel' (relativo à) serve para indicar se aquele link é relativo à uma fonte externa (external) -->
+    </p>
+    <h1>
+        Usando links internos:
+    </h1>
+    <h2>
+        Serve para fazer ligação com conteúdos internos da sua página.
+    </h2>
+    <p>
+        Vamos supor que está seja a "primeira página" do meu site, para acessar a segunda página basta <a href="pag002.html" rel="next">clicar aqui</a>.
+        <!-- 'rel="next' significa que este link é relativo ao PRÓXIMO conteúdo do MEU site -->
+    </p>
+    <p>
+        Você também pode descobrir o elenco do Santos <a href="elenco/elenco.html">clicando aqui</a>
+    </p>
+    <h1>
+        Link para download:
+    </h1>
+    <p>
+        Para acessar o material bibliográfico desta aula, <a href="../../../../conteudo-bibliografico/10 - Ligações em toda parte.pdf" download="10 - Ligações em toda parte.pdf" type="application/pdf">CLIQUE AQUI</a>
+        <!-- o parâmetro 'dowload' significa que este documento é para ser formatado para download, já o 'type' indica qual o tipo de media de download que se deve fazer, neste caso é um download em pdf (por isso o 'application/pdf'), é possível averiguar todos os comandos de medias acessando o site: iana.org/assignments/media-types -->
+    </p>
+</body>
+</html>
