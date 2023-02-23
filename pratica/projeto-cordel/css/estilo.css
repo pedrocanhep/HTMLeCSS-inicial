@@ -57,15 +57,32 @@ section {
     background-color: #fff;
     color: #000;
 }
+.normal p {
+    padding-bottom: 2em;
+}
 
 .imagem {
     background-color: #0e0e0e;
     color: #fff;
+    box-shadow: inset 0px 5px 15px #00000070;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
 }
 .imagem > p {
     display: inline-block;
     background-color: #00000050;
     padding: 10px;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+#img01 {
+    background-image: url(../imagens/background001.jpg);
+}
+
+#img02 {
+    background-image: url(../imagens/background002.jpg);
 }
 
 /* FORMATAÇÃO DO RODAPÉ */
@@ -74,7 +91,6 @@ section {
     color: #ddd;
     padding: 5px;
     text-align: center;
-    margin-top: 20px;
     font-family: var(--fonteTitulo);
 }
 
