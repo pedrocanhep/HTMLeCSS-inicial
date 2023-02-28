@@ -13,6 +13,14 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            margin: auto;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #ccc;
         }
 
         td, th {
@@ -21,8 +29,18 @@
         }
 
         thead, tfoot {
-            background-color: #777;
+            background-color: #383838;
             color: #fff;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: #ccc;
         }
     </style>
 </head>
@@ -33,6 +51,7 @@
     <!--
         ANATOMIA DA TABELA:
             Table
+                Caption
                 Thead
                     tr, td, th
                 Tbody
@@ -41,10 +60,11 @@
                     tr, td, th
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -158,7 +178,7 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Total da População:</th>
+            <th scope="row">Total da População:</th>
             <td><strong>210.147.125</strong></td>
         </tfoot>
     </table>
