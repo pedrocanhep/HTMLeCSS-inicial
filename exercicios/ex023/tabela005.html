@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de tabelas</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 5px;
+            width: 100px;
+            text-align: center;
+        }
+
+        caption {
+            background-color: #bbb;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+
+        col.cnome {
+            background-color: #ffff00;
+        }
+        col.cgroup {
+            background-color: #eee;
+        }
+
+        #rbranco {
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de tabela:</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgroup" span="3">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr id="rbranco">
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Roberta</td>
+            <td>F</td>
+            <td>32</td>
+            <td>Advogada</td>
+        </tr>
+        <tr>
+            <td>Ana Carolina</td>
+            <td>F</td>
+            <td>29</td>
+            <td>Atendente</td>
+        </tr>
+        <tr>
+            <td>André</td>
+            <td>M</td>
+            <td>56</td>
+            <td>Promotor</td>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>M</td>
+            <td>18</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Joelma Eliana</td>
+            <td>F</td>
+            <td>47</td>
+            <td>Designer</td>
+        </tr>
+    </table>
+</body>
+</html>

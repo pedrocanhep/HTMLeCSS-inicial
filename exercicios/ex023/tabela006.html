@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas responsivas</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 5px;
+            min-width: 100px;
+            text-align: center;
+        }
+
+        caption {
+            text-align: left;
+            padding: 5px;
+        }
+
+        col.cnome {
+            background-color: #ffff00;
+        }
+        col.cgroup {
+            background-color: #eee;
+        }
+
+        #rbranco {
+            background-color: #fff;
+        }
+
+        .titulo {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .mes {
+            background-color: #bbb;
+        }
+
+        #total {
+            background-color: #ffff00;
+        }
+
+        #container {
+            overflow-x: auto;
+            /* overflow é algo que transborda, logo criará uma barra de rolagem para que não transborde mais */
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea odit obcaecati distinctio quasi eaque accusamus at facere aspernatur, voluptas maxime, ipsum esse est minima cumque dolorum quam doloribus! Autem, voluptas!</p>
+    <div id="container">
+        <table>
+            <caption>Tabelas responsivas</caption>
+            <tr>
+                <th class="titulo" scope="row">Meses</th>
+                <th class="mes" scope="col">Janeiro</th>
+                <th class="mes" scope="col">Fevereiro</th>
+                <th class="mes" scope="col">Março</th>
+                <th class="mes" scope="col">Abril</th>
+                <th class="mes" scope="col">Maio</th>
+                <th class="mes" scope="col">Junho</th>
+                <th class="mes" scope="col">Julho</th>
+                <th class="mes" scope="col">Agosto</th>
+                <th class="mes" scope="col">Setembro</th>
+                <th class="mes" scope="col">Outubro</th>
+                <th class="mes" scope="col">Novembro</th>
+                <th class="mes" scope="col">Dezembro</th>
+            </tr>
+            <tr>
+                <th class="titulo" scope="row">Ganhos</th>
+                <td>R$ 1.200,00</td>
+                <td>R$ 1.200,00</td>
+                <td>R$ 1.200,00</td>
+                <td>R$ 1.200,00</td>
+                <td>R$ 1.200,00</td>
+                <td>R$ 1.200,00</td>
+                <td>R$ 1.200,00</td>
+                <td>R$ 1.200,00</td>
+                <td>R$ 1.200,00</td>
+                <td>R$ 1.200,00</td>
+                <td>R$ 1.200,00</td>
+                <td>R$ 1.200,00</td>
+            </tr>
+            <tr>
+                <th class="titulo" scope="row" colspan="12">Total</th>
+                <td id="total">R$ 14.400,00</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
