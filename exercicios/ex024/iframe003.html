@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação entre Iframes</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #363636;
+            color: #fff;
+        }
+
+        iframe {
+            display: block;
+            margin: auto;
+            height: 300px;
+            width: 95vw;
+            border: 1px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça sua escolha</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere deleniti, molestiae molestias quo in distinctio, et minus sapiente nobis veniam aliquid quisquam est tempore cumque quibusdam. Magni sint ducimus in.</p>
+    <ul>
+        <li><a href="paginas-extras/pag01.html" target="frame">Página 001</a></li>
+        <li><a href="paginas-extras/pag02.html" target="frame">Página 002</a></li>
+        <li><a href="paginas-extras/pag03.html" target="frame">Página 003</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nostrum quisquam, rem possimus in officiis numquam neque sit doloribus quam mollitia quidem nemo distinctio necessitatibus, quod perferendis impedit corrupti suscipit!
+    Odit culpa at rem aut voluptate repellendus dignissimos error. Laboriosam dicta, impedit ratione animi libero quidem voluptatem voluptas quisquam unde culpa sunt aliquam ullam ut quam. Officia ut unde libero?</p>
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1>" frameborder="0" name="frame"></iframe>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi sint magnam alias cupiditate, illum delectus non id ipsum optio, quas facere. Eius sunt reprehenderit ducimus ad iusto autem quis asperiores!</p>
+</body>
+</html>
