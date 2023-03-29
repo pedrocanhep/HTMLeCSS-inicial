@@ -23,6 +23,11 @@ a#insta {
     background-image: linear-gradient(to right, #fff93d, #e61c2d, #f700ff, #5900ff);
     text-decoration: none;
     color: #fff;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 20pt;
+}
+
+a#insta:hover {
+    background-image: none;
+    background-color: #e61c2d;
 }
