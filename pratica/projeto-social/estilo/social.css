@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px; 
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+img {
+    display: block;
+    width: 267px;
+}
+
+a#insta {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-image: linear-gradient(to right, #fff93d, #e61c2d, #f700ff, #5900ff);
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20pt;
+}
