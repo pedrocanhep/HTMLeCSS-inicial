@@ -31,3 +31,19 @@ a#insta:hover {
     background-image: none;
     background-color: #e61c2d;
 }
+
+a#yt {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: #cd0011;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 20pt;
+}
+
+a#yt:hover {
+    background-image: none;
+    background-color: #ff2414;
+}

@@ -35,9 +35,8 @@ iframe#tela {
 }
 
 #redes-sociais {
-    display: flex;
-    flex-direction: column;
-    text-align: end;
+    display: block;
+    text-align: right;
 }
 
 #creditos {
@@ -45,14 +44,15 @@ iframe#tela {
     position: absolute;
     top: 87%;
     left: 5px;
-    width: 70px;
-    text-align: center;
+    width: 250px;
+    text-align: justify;
 }
 
 #creditos > h3 {
     font-size: 15px;
     color: #fafafa;
     font-style: italic;
+    margin-left: 10px;
 }
 
 .menu img {
@@ -61,6 +61,10 @@ iframe#tela {
     margin: 10px;
     box-shadow: 2px 2px 5px #0000006a;
     box-sizing: border-box;
+}
+
+.menu a {
+    width: 60px;
 }
 
 #redes-sociais img:hover {
