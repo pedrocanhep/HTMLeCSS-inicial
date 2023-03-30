@@ -98,3 +98,19 @@ a#gh:hover {
     background-image: none;
     background-color: #147d34;
 }
+
+a#lk {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: #077bff;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 20pt;
+}
+
+a#lk:hover {
+    background-image: none;
+    background-color: #178aef;
+}
