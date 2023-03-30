@@ -47,3 +47,51 @@ a#yt:hover {
     background-image: none;
     background-color: #ff2414;
 }
+
+a#face {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: #1202c0;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 20pt;
+}
+
+a#face:hover {
+    background-image: none;
+    background-color: #0044ff;
+}
+
+a#twt {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: #00cde0;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 20pt;
+}
+
+a#twt:hover {
+    background-image: none;
+    background-color: #007bff;
+}
+
+a#gh {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: #20af4b;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 20pt;
+}
+
+a#gh:hover {
+    background-image: none;
+    background-color: #147d34;
+}
