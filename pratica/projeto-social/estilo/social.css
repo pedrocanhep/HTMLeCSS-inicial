@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* configurações gerais */
 * {
     margin: 0px; 
     padding: 0px;
@@ -11,11 +12,13 @@
     height: 0px;
 }
 
+/* configurações de imagem das telas */
 img {
     display: block;
     width: 267px;
 }
 
+/* configurações dos links para as redes sociais */
 a#insta {
     display: block;
     padding: 10px;
